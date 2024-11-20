@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca4b835e-794d-469d-a8a7-a4b234022b89" name="Changes" comment="初始化 Spring Boot project" />
+    <list default="true" id="ca4b835e-794d-469d-a8a7-a4b234022b89" name="Changes" comment="初始化 Spring Boot project">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,6 +48,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -84,6 +87,8 @@
       <workItem from="1731681548626" duration="4751000" />
       <workItem from="1731851547480" duration="2227000" />
       <workItem from="1731944606297" duration="19000" />
+      <workItem from="1731944908372" duration="40000" />
+      <workItem from="1731944977301" duration="132000" />
     </task>
     <task id="LOCAL-00001" summary="初始化 Spring Boot project">
       <option name="closed" value="true" />
