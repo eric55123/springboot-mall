@@ -30,4 +30,6 @@ public class ProductRowMapper implements RowMapper<Product> {
       product.setLastModifiedDate(rs.getTimestamp("last_modified_date"));
       return product;
     }
+
+
 }
