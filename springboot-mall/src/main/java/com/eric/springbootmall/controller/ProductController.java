@@ -55,4 +55,21 @@ public class ProductController {
         return ResponseEntity.status(HttpStatus.OK).body(updatedProduct); // 回傳更新後的商品
     }
 
+    @DeleteMapping("/products/{productId}")
+    public ResponseEntity<?> deleteProduct(@PathVariable Integer productId) {
+        productService.deleteProductById(productId);
+
+        return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+    }
+
 }
+
+
+
+
+
+
+
+
+
+
