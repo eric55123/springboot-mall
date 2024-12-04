@@ -8,6 +8,24 @@ public class ProductQueryParams {
     private String search;
     private String orderBy;
     private String sort;
+    private Integer Limit;
+    private Integer Offset;
+
+    public Integer getLimit() {
+        return Limit;
+    }
+
+    public void setLimit(Integer limit) {
+        Limit = limit;
+    }
+
+    public Integer getOffset() {
+        return Offset;
+    }
+
+    public void setOffset(Integer offset) {
+        Offset = offset;
+    }
 
     public String getOrderBy() {
         return orderBy;
