@@ -1,9 +1,8 @@
 package com.eric.springbootmall.service.impl;
 
 
-import com.eric.springbootmall.constant.ProductCategory;
 import com.eric.springbootmall.dao.ProductDao;
-import com.eric.springbootmall.dao.ProductQueryParams;
+import com.eric.springbootmall.dto.ProductQueryParams;
 import com.eric.springbootmall.dto.ProductRequest;
 import com.eric.springbootmall.model.Product;
 import com.eric.springbootmall.service.ProductService;

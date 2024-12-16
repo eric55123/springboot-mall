@@ -1,4 +1,4 @@
-package com.eric.springbootmall.dao;
+package com.eric.springbootmall.dto;
 
 import com.eric.springbootmall.constant.ProductCategory;
 
