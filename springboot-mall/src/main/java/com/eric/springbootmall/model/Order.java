@@ -1,14 +1,26 @@
 package com.eric.springbootmall.model;
 
-import javax.xml.crypto.Data;
+
+import java.util.Date;
+import java.util.List;
 
 public class Order {
 
     private Integer orderId;
     private Integer userId;
     private Integer totalAmount;
-    private Data createdDate;
-    private Data lastModifiedDate;
+    private Date createdDate;
+    private Date lastModifiedDate;
+
+    private List<OrderItem> orderItemList;
+
+    public List<OrderItem> getOrderItemList() {
+        return orderItemList;
+    }
+
+    public void setOrderItemList(List<OrderItem> orderItemList) {
+        this.orderItemList = orderItemList;
+    }
 
     public Integer getOrderId() {
         return orderId;
@@ -34,19 +46,19 @@ public class Order {
         this.totalAmount = totalAmount;
     }
 
-    public Data getCreatedDate() {
+    public Date getCreatedDate() {
         return createdDate;
     }
 
-    public void setCreatedDate(Data createdDate) {
+    public void setCreatedDate(Date createdDate) {
         this.createdDate = createdDate;
     }
 
-    public Data getLastModifiedDate() {
+    public Date getLastModifiedDate() {
         return lastModifiedDate;
     }
 
-    public void setLastModifiedDate(Data lastModifiedDate) {
+    public void setLastModifiedDate(Date lastModifiedDate) {
         this.lastModifiedDate = lastModifiedDate;
     }
 }
