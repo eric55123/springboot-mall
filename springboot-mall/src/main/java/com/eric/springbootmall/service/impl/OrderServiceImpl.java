@@ -1,6 +1,7 @@
 package com.eric.springbootmall.service.impl;
 
 import com.eric.springbootmall.dao.*;
+import com.eric.springbootmall.dto.OrderQueryParams;
 import com.eric.springbootmall.model.Order;
 import com.eric.springbootmall.model.OrderItem;
 import com.eric.springbootmall.model.Product;
@@ -32,6 +33,21 @@ public class OrderServiceImpl implements OrderService {
     private UserDao userDao;
 
     private static final Logger log = LoggerFactory.getLogger(OrderServiceImpl.class);
+
+    @Override
+    public Integer countOrder(OrderQueryParams orderQueryParams) {
+        return orderDao.countOrder(orderQueryParams);
+    }
+
+    @Override
+    public List<Order> getOrders(OrderQueryParams orderQueryParams) {
+        List<Order> orderList = orderDao.getOrders(orderQueryParams);
+        for (Order order : orderList) {
+            List<OrderItem> orderItemList = orderDao.getOrderItemsById(order.getOrderId());
+            order.setOrderItemList(orderItemList);
+        }
+        return orderList;
+    }
 
     @Override
     public Order getOrderById(Integer orderId) {
@@ -95,4 +111,6 @@ public class OrderServiceImpl implements OrderService {
 
         return orderId;
     }
+
+
 }
